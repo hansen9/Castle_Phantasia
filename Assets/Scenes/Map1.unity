@@ -1757,6 +1757,7 @@ GameObject:
   - component: {fileID: 1538599995}
   - component: {fileID: 1538599994}
   - component: {fileID: 1538599993}
+  - component: {fileID: 1538599996}
   m_Layer: 0
   m_Name: idle-with-weapon-1
   m_TagString: Untagged
@@ -1914,6 +1915,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1538599996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538599989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebc3e1f66c3f204e9ce423fcb4e233b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  horizMovement: 0
 --- !u!1 &1538695876
 GameObject:
   m_ObjectHideFlags: 0
