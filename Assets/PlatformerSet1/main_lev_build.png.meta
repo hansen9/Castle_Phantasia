@@ -3,7 +3,7 @@ guid: 6d28f55f1b0572546b2632db94416d69
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,6 +23,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -31,21 +33,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -54,12 +56,53 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -37642,7 +37685,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -37716,15 +37758,15 @@ TextureImporter:
       main_lev_build_670: 1795876393
       main_lev_build_123: -1960428351
       main_lev_build_791: -1273397660
-      main_lev_build_861: 653252321
       main_lev_build_129: -323268126
       main_lev_build_635: 1523328256
+      main_lev_build_1311: 1470596158
       main_lev_build_496: -881903266
       main_lev_build_1711: -1582621553
+      main_lev_build_861: 653252321
       main_lev_build_835: -693797544
       main_lev_build_226: -1902514321
       main_lev_build_1194: -412054520
-      main_lev_build_1311: 1470596158
       main_lev_build_954: 1565599630
       main_lev_build_1421: -1301728884
       main_lev_build_436: -1498840254
@@ -37791,13 +37833,13 @@ TextureImporter:
       main_lev_build_468: 56103823
       main_lev_build_465: 424017005
       main_lev_build_651: -35005800
-      main_lev_build_940: -1194129121
       main_lev_build_398: -541618959
-      main_lev_build_1466: 476371260
       main_lev_build_1308: 406589930
+      main_lev_build_940: -1194129121
+      main_lev_build_1466: 476371260
+      main_lev_build_1450: 861382459
       main_lev_build_652: -1563130485
       main_lev_build_495: 932744523
-      main_lev_build_1450: 861382459
       main_lev_build_995: -84557021
       main_lev_build_760: -392707653
       main_lev_build_1601: 1764973147
@@ -37919,8 +37961,8 @@ TextureImporter:
       main_lev_build_1095: -2079271283
       main_lev_build_431: -1432375015
       main_lev_build_587: -334517607
-      main_lev_build_876: -311263243
       main_lev_build_599: 478926522
+      main_lev_build_876: -311263243
       main_lev_build_232: -1199893209
       main_lev_build_419: 333173778
       main_lev_build_544: -1186486599
@@ -37953,15 +37995,15 @@ TextureImporter:
       main_lev_build_115: -1363463440
       main_lev_build_229: -1874540010
       main_lev_build_99: -1425579379
-      main_lev_build_1649: -560540954
-      main_lev_build_233: 2032642794
       main_lev_build_1336: -23358519
+      main_lev_build_233: 2032642794
+      main_lev_build_1649: -560540954
+      main_lev_build_764: 1609002607
       main_lev_build_792: 1218083773
-      main_lev_build_840: 678996755
       main_lev_build_1403: -910089443
       main_lev_build_441: -639397774
-      main_lev_build_764: 1609002607
       main_lev_build_100: -575691476
+      main_lev_build_840: 678996755
       main_lev_build_1541: 277816885
       main_lev_build_517: -312125840
       main_lev_build_1529: -1262340815
@@ -37975,10 +38017,10 @@ TextureImporter:
       main_lev_build_860: -2036242601
       main_lev_build_206: -445857473
       main_lev_build_1539: -747119218
+      main_lev_build_1443: -699951655
       main_lev_build_1744: -1338865716
       main_lev_build_981: -1408387068
       main_lev_build_566: 1315860907
-      main_lev_build_1443: -699951655
       main_lev_build_592: 578451911
       main_lev_build_537: 192768457
       main_lev_build_1176: -1434157678
@@ -38568,7 +38610,6 @@ TextureImporter:
       main_lev_build_892: -689247201
       main_lev_build_1747: 1929371830
       main_lev_build_84: 1114018721
-      main_lev_build_1475: -152242981
       main_lev_build_22: -1042648719
       main_lev_build_1274: 136514232
       main_lev_build_925: 635623624
@@ -38592,6 +38633,7 @@ TextureImporter:
       main_lev_build_1518: 1072867448
       main_lev_build_935: -102814862
       main_lev_build_1172: 1873253945
+      main_lev_build_1475: -152242981
       main_lev_build_1431: 1367422121
       main_lev_build_1237: -1903928819
       main_lev_build_648: -1847920574
@@ -38605,21 +38647,21 @@ TextureImporter:
       main_lev_build_1483: 1606188310
       main_lev_build_1184: 1039001929
       main_lev_build_219: 1581669211
-      main_lev_build_1447: -1956478397
+      main_lev_build_384: 1149129069
       main_lev_build_308: -1891258260
       main_lev_build_1303: 66755011
       main_lev_build_880: -310331470
-      main_lev_build_384: 1149129069
+      main_lev_build_1447: -1956478397
       main_lev_build_1142: 8913906
       main_lev_build_8: 1572832054
       main_lev_build_93: -57469929
       main_lev_build_352: 1109940480
       main_lev_build_1074: -517870471
-      main_lev_build_1457: 776294846
       main_lev_build_747: -326983560
       main_lev_build_506: -134413669
-      main_lev_build_1168: -968135502
       main_lev_build_1146: -2097975163
+      main_lev_build_1168: -968135502
+      main_lev_build_1457: 776294846
       main_lev_build_565: -28889026
       main_lev_build_1454: 2112808759
       main_lev_build_656: 360326415
@@ -38710,8 +38752,8 @@ TextureImporter:
       main_lev_build_1486: 52737583
       main_lev_build_532: -1321662713
       main_lev_build_636: 522644616
-      main_lev_build_1658: 1399082637
       main_lev_build_1042: 1645648975
+      main_lev_build_1658: 1399082637
       main_lev_build_1266: 1631810467
       main_lev_build_634: 2029087891
       main_lev_build_1528: -89701730
@@ -38732,11 +38774,11 @@ TextureImporter:
       main_lev_build_1583: -1477097973
       main_lev_build_1678: -2040904384
       main_lev_build_102: -1852142152
-      main_lev_build_1132: 957654164
       main_lev_build_1005: -350940662
+      main_lev_build_1138: -273129883
+      main_lev_build_1132: 957654164
       main_lev_build_1128: -1740917836
       main_lev_build_462: 1115438681
-      main_lev_build_1138: -273129883
       main_lev_build_1405: -966130936
       main_lev_build_771: -725011545
       main_lev_build_1153: 1517208208
@@ -38984,14 +39026,14 @@ TextureImporter:
       main_lev_build_1277: 1443246216
       main_lev_build_1731: -193779853
       main_lev_build_300: 586839957
+      main_lev_build_825: -1673979247
       main_lev_build_1217: 1278083556
       main_lev_build_460: 1584662196
       main_lev_build_556: 263045978
-      main_lev_build_825: -1673979247
+      main_lev_build_1246: 1084406875
       main_lev_build_1490: 922432399
       main_lev_build_824: -163815714
       main_lev_build_285: 744737122
-      main_lev_build_1246: 1084406875
       main_lev_build_499: 1586880573
       main_lev_build_918: -82840481
       main_lev_build_267: 275744568
