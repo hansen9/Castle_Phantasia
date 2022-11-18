@@ -6,6 +6,10 @@ using System.Collections;
 public class AnimationEvent : MonoBehaviour {
 
 	public GameObject enemy;
+    public Vector3 attackOffset;
+    public float attackRange = 1f;
+    public LayerMask attackMask;
+	public int bossAttackDamage = 50;
 
 	private int atkTimes = 0;
 
@@ -13,18 +17,16 @@ public class AnimationEvent : MonoBehaviour {
 		Debug.Log ("Attack Start");
 
 		//Just for demonstration, you can replace it with your own code logic.
-		atkTimes++;
-		if (enemy && atkTimes <= 3) {
-			Animator enemyAnimator = enemy.GetComponent<Animator> ();
-			if (atkTimes == 1) {
-				enemyAnimator.SetTrigger ("hit_1");
-			} else if (atkTimes == 2) {
-				enemyAnimator.SetTrigger ("hit_2");
-			} else if (atkTimes == 3) {
-				enemyAnimator.SetTrigger ("hit_2");
-				enemyAnimator.SetTrigger ("death");
-			} 
+		Vector3 pos = transform.position;
+		pos += transform.right * attackOffset.x;
+		pos += transform.up * attackOffset.y;
+
+		Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+		if(colInfo != null)
+		{
+			colInfo.GetComponent<Health>().TakeDamage(bossAttackDamage);
 		}
+
 	}
 
 	public void AttackStartEffectObject () {

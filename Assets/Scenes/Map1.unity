@@ -1642,7 +1642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990317429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.75, y: -1.128, z: 0}
+  m_LocalPosition: {x: 4.07, y: -1.128, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3081,7 +3081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010240275622, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.68
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4000010240275622, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3212,6 +3212,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5440558363477013866, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
+      propertyPath: attackMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841252470157520877, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: attackMask.m_Bits
       value: 8
       objectReference: {fileID: 0}
