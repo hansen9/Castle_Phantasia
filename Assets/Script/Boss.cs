@@ -6,9 +6,6 @@ public class Boss : MonoBehaviour
 {
     public Transform player;
     public bool isFlipped = false;
-    public Vector3 attackOffset;
-    public float attackRange = 1f;
-    public LayerMask attackMask;
     // Start is called before the first frame update
     // void Start()
     // {
