@@ -11,8 +11,6 @@ public class AnimationEvent : MonoBehaviour {
     public LayerMask attackMask;
 	public int bossAttackDamage = 50;
 
-	private int atkTimes = 0;
-
 	public void AttackStart () {
 		Debug.Log ("Attack Start");
 
