@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class BossHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     int currentHealth;
     public Animator anim;
+    public Healthbar healthBar;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+        healthBar.SetHealth(currentHealth);
         anim.SetTrigger("hurt");
         if(currentHealth <= 0)
         {
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy Died!");
+        // Debug.Log("Enemy Died!");
 
         anim.SetBool("isDead", true);
 
