@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StageMenu : MonoBehaviour
 {
     public void PlayTutorial(){
+        // SceneManager.LoadScene("Tutorial"); bisa seperti ini juga
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void PlayStage1(){
