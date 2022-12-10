@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-    int damageSpike = 100;
+    int damageSpike = 20;
     public Animator anim;
     public Healthbar healthBar;
     // Start is called before the first frame update
