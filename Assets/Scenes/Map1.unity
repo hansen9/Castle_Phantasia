@@ -2016,6 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   anim: {fileID: 814539635}
   healthBar: {fileID: 1385049214}
 --- !u!1 &815816027
@@ -2445,6 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   anim: {fileID: 990317431}
   healthBar: {fileID: 1813057466}
 --- !u!1 &992953213
@@ -3811,6 +3813,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010262668220, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 1000010415203692, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -4128,8 +4134,12 @@ PrefabInstance:
       value: 0.52690613
       objectReference: {fileID: 0}
     - target: {fileID: 3700447748053268651, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
+      propertyPath: m_LinearDrag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700447748053268651, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: m_Constraints
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3700447748053268651, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: m_UseAutoMass
@@ -4150,6 +4160,10 @@ PrefabInstance:
     - target: {fileID: 5440558363477013866, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: attackMask.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841252470157520877, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
+      propertyPath: bossAttackDamage
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8841252470157520877, guid: e513bc24db439c0409da25f7dfe8f71f, type: 3}
       propertyPath: attackMask.m_Bits
@@ -4180,6 +4194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   anim: {fileID: 1543861803}
   healthBar: {fileID: 1020794931}
 --- !u!4 &1543861811 stripped
