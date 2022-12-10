@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
-    int currentHealth;
-    int damageSpike = 25;
+    public int currentHealth;
+    int damageSpike = 100;
     public Animator anim;
     public Healthbar healthBar;
     // Start is called before the first frame update
@@ -43,11 +44,22 @@ public class Health : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         GetComponent<CircleCollider2D>().enabled = false;
         this.enabled = false;
+        if(gameObject.CompareTag("Player") || gameObject.CompareTag("Boss")){
+            GameOver();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Trap")){
             TakeDamage(damageSpike);
+        }
+    }
+
+    void GameOver()
+    {
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
