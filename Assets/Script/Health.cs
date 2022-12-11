@@ -44,8 +44,11 @@ public class Health : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         GetComponent<CircleCollider2D>().enabled = false;
         this.enabled = false;
-        if(gameObject.CompareTag("Player") || gameObject.CompareTag("Boss")){
+        if(gameObject.CompareTag("Player")){
             GameOver();
+        }
+        if (gameObject.CompareTag("Boss")){
+            GameWin();
         }
     }
 
@@ -61,6 +64,14 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0)
         {
             SceneManager.LoadScene("GameOver");
+        }
+    }
+    
+    void GameWin()
+    {
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene("GameWin");
         }
     }
 }

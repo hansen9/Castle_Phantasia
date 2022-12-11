@@ -246,7 +246,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   anim: {fileID: 5117853786458452360}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 9152874690371868187, guid: 52f9c87013448dc479880c0a9abb686f, type: 3}
 --- !u!114 &3101322138983033121
 MonoBehaviour:
   m_ObjectHideFlags: 0
