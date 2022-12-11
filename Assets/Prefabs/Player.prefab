@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5117853786458452365}
   - component: {fileID: 5117853786458452366}
   - component: {fileID: 5117853786458452367}
+  - component: {fileID: 3101322138983033121}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -32,8 +33,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5117853786458452400}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.67, y: -1.1714833, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.41, y: -1.1714833, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -243,8 +244,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   anim: {fileID: 5117853786458452360}
   healthBar: {fileID: 0}
+--- !u!114 &3101322138983033121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117853786458452400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c476d275fd827943b775ec31688321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 5117853786458452367}
+  healthBar: {fileID: 9152874690371868187, guid: 52f9c87013448dc479880c0a9abb686f, type: 3}
 --- !u!1 &5117853786760069397
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5117853786923563089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015, y: -0.306, z: 0.11216253}
+  m_LocalPosition: {x: -0.015, y: -0.306, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
