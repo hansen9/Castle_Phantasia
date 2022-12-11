@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - Boss
   - Potion
+  - Gate
   layers:
   - Default
   - TransparentFX
