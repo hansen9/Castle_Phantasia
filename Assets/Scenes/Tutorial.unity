@@ -182,10 +182,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1123608384265282409, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
-      propertyPath: m_LinearDrag
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1123608384265282413, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
       propertyPath: m_Name
       value: Skeleton01 (1)
@@ -14064,17 +14060,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &993895779 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7195774626346504370, guid: 3f955d614375daf4995b5e1322ce99f2, type: 3}
-  m_PrefabInstance: {fileID: 1811524787565269479}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f45d92f2dc2e7e34ba6d7dc77d543f7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1006735835
 GameObject:
   m_ObjectHideFlags: 0
@@ -15125,10 +15110,6 @@ PrefabInstance:
     - target: {fileID: 1123608384265282404, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1123608384265282409, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
-      propertyPath: m_LinearDrag
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1123608384265282413, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
       propertyPath: m_Name
@@ -34601,10 +34582,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1123608384265282409, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
-      propertyPath: m_LinearDrag
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1123608384265282413, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
       propertyPath: m_Name
       value: Skeleton01
@@ -34763,10 +34740,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2569308031693428019, guid: 3f955d614375daf4995b5e1322ce99f2, type: 3}
-      propertyPath: m_Name
-      value: PlayerManabar
-      objectReference: {fileID: 0}
     - target: {fileID: 6717614114872323251, guid: 3f955d614375daf4995b5e1322ce99f2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -34841,10 +34814,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 168744905702529191, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
-      propertyPath: manaBar
-      value: 
-      objectReference: {fileID: 993895779}
     - target: {fileID: 3101322138983033121, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
       propertyPath: healthBar
       value: 
@@ -34892,10 +34861,6 @@ PrefabInstance:
     - target: {fileID: 5117853786458452358, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117853786458452362, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
-      propertyPath: speed
-      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5117853786458452367, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
       propertyPath: healthBar
