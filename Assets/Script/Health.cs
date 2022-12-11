@@ -71,7 +71,7 @@ public class Health : MonoBehaviour
     {
         if(currentHealth <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameWin");
         }
     }
 }
