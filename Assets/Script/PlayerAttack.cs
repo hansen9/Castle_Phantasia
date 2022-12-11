@@ -22,10 +22,6 @@ public class PlayerAttack : MonoBehaviour
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
-            else if(Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Pierce();
-            }
         }
         
     }
@@ -43,19 +39,6 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void Pierce()
-    {
-        anim.SetTrigger("attackB");
-
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach(Collider2D enemy in hitEnemies)
-        {
-            Debug.Log("player hit " + enemy.name);
-            enemy.GetComponent<Health>().TakeDamage(attackDamage);
-        }
-        GetComponent<Mana>().TakeMana(25);
-    }
     void OnDrawGizmosSelected()
     {
         if(attackPoint == null)
