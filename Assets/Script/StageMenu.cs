@@ -12,4 +12,7 @@ public class StageMenu : MonoBehaviour
     public void PlayStage1(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
+    public void PlayStage2(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
 }
