@@ -14,7 +14,6 @@ public class AnimationEvent : MonoBehaviour {
 	public void AttackStart () {
 		Debug.Log ("Attack Start");
 
-		//Just for demonstration, you can replace it with your own code logic.
 		Vector3 pos = transform.position;
 		pos += transform.right * attackOffset.x;
 		pos += transform.up * attackOffset.y;
