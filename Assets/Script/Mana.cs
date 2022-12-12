@@ -6,7 +6,7 @@ public class Mana : MonoBehaviour
     public float maxMana = 50f;
     public float currentMana;
     public Manabar manaBar;
-    private float manaRegen = 50f;
+    private float manaRegen = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +22,7 @@ public class Mana : MonoBehaviour
     }
     public void TakeMana(int cost)
     {
-        if(currentMana > cost)
-        {
-            currentMana -= cost;
-            manaBar.SetMana(currentMana);
-        }
-        else
-        {
-            Debug.Log("out of mana");
-        }
+        currentMana -= cost;
+        manaBar.SetMana(currentMana);
     }
 }

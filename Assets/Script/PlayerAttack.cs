@@ -9,20 +9,23 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public int attackDamage = 40;
+    public int attackDamage = 25;
+    public int attackDamagePierce = 50;
     public float attackRate = 2f;
     private float nextAttackTime = 0;
+    public int manaConsumption = 25;
+    public Mana manaNow;
     // Update is called once per frame
     void Update()
     {
         if(Time.time >= nextAttackTime)
         {
-            if(Input.GetKeyDown(KeyCode.Mouse1))
+            if(Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown("z"))
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
-            else if(Input.GetKeyDown(KeyCode.Mouse0))
+            else if(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown("x"))
             {
                 Pierce();
             }
@@ -45,14 +48,19 @@ public class PlayerAttack : MonoBehaviour
 
     void Pierce()
     {
-        anim.SetTrigger("attackB");
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        foreach(Collider2D enemy in hitEnemies)
+        if (manaNow.currentMana >= manaConsumption)
         {
-            Debug.Log("player hit " + enemy.name);
-            enemy.GetComponent<Health>().TakeDamage(attackDamage);
+            manaNow.TakeMana(manaConsumption);
+            anim.SetTrigger("attackB");
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            foreach(Collider2D enemy in hitEnemies)
+            {
+                Debug.Log("player hit " + enemy.name);
+                enemy.GetComponent<Health>().TakeDamage(attackDamagePierce);
+            }
+        }else {
+            Debug.Log("out of mana");
         }
-        GetComponent<Mana>().TakeMana(25);
     }
     
     void OnDrawGizmosSelected()
