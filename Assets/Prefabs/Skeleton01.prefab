@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 1123608384265282408}
   - component: {fileID: 1123608384265282415}
   - component: {fileID: 1123608384265282414}
-  - component: {fileID: 1123608384265282405}
+  - component: {fileID: 1540504212762904407}
   m_Layer: 7
   m_Name: Skeleton01
   m_TagString: Untagged
@@ -283,7 +283,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &1123608384265282408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   currentHealth: 0
   anim: {fileID: 1123608384265282410}
   healthBar: {fileID: 1123608384997651838}
---- !u!114 &1123608384265282405
+--- !u!114 &1540504212762904407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,16 +351,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1123608384265282413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 721308ef9c2ef490fb1940d70811441e, type: 3}
+  m_Script: {fileID: 11500000, guid: 69338205a69f5b74a895c9d20a489c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
   attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
+  attackRange: 0.4
   attackMask:
     serializedVersion: 2
     m_Bits: 8
-  bossAttackDamage: 5
+  AttackDamage: 5
+  player: {fileID: 5117853786458452358, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
+  isFlipped: 0
 --- !u!1 &1123608384602205364
 GameObject:
   m_ObjectHideFlags: 0
