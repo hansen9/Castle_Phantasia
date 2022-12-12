@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 1652471188856066632}
   - component: {fileID: 5440558363477013866}
   - component: {fileID: 8841252470157520877}
-  - component: {fileID: 7537959049416794512}
   m_Layer: 0
   m_Name: boss_devil_man
   m_TagString: Untagged
@@ -298,6 +297,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isFlipped: 0
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 1
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &8841252470157520877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,28 +315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1000010262668220}
-  attackOffset: {x: 0, y: 0, z: 0}
-  attackRange: 1
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 0
-  bossAttackDamage: 50
---- !u!114 &7537959049416794512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010262668220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182c98df5f2b8954b81e5a6df961cda0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  anim: {fileID: 95000010581205308}
-  healthBar: {fileID: 0}
 --- !u!1 &1000010415203692
 GameObject:
   m_ObjectHideFlags: 0
