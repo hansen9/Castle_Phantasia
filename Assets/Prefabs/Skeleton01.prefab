@@ -283,7 +283,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!61 &1123608384265282408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -356,11 +356,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackOffset: {x: 0, y: 0, z: 0}
   attackRange: 0.4
+  aggroRange: 0
+  speed: 0
   attackMask:
     serializedVersion: 2
     m_Bits: 8
   AttackDamage: 5
-  player: {fileID: 5117853786458452358, guid: b613ff9dfc6b65d41a1e7db1a0e2300b, type: 3}
+  player: {fileID: 0}
   isFlipped: 0
 --- !u!1 &1123608384602205364
 GameObject:
