@@ -13,17 +13,30 @@ public class EnemyBehavior : MonoBehaviour
 	public int AttackDamage = 25;
     public Transform player;
     public bool isFlipped = false;
+    Animator anim;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         float distToPlayer = Vector2.Distance(transform.position, player.position);
-        Debug.Log(player.position);
+
+        //jika jarak enemy dan player kurang dari aggroRange maka kejar player
+        if(distToPlayer < aggroRange)
+        {
+            chasePlayer();
+        }
+        //selain itu berhenti
+        else
+        {
+            stopChasing();
+        }
     }
 
 	public void Attack () {
@@ -56,5 +69,25 @@ public class EnemyBehavior : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             isFlipped = true;
         }
+    }
+
+    void chasePlayer()
+    {
+        anim.SetBool("chase", true);
+        if(transform.position.x < player.position.x)
+        {
+            //kalo di kiri, kejar ke kiri
+            rb.velocity = new Vector2(speed, 0);
+        }
+        else
+        {
+            //selain itu kejar ke kanan
+            rb.velocity = new Vector2(-speed, 0);
+        }
+    }
+    void stopChasing()
+    {
+        anim.SetBool("chase", false);
+        rb.velocity = Vector2.zero;
     }
 }
