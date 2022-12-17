@@ -356,8 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackOffset: {x: 0, y: 0, z: 0}
   attackRange: 0.4
-  aggroRange: 0
-  speed: 0
+  aggroRange: 2
+  speed: 0.5
   attackMask:
     serializedVersion: 2
     m_Bits: 8
