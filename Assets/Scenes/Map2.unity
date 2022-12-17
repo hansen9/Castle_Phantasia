@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1540504212762904407, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1405407111}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
 --- !u!1 &41037321
@@ -13185,6 +13189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton01
       objectReference: {fileID: 0}
+    - target: {fileID: 1540504212762904407, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1405407111}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
 --- !u!4 &411652467 stripped
@@ -73719,6 +73727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1540504212762904407, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1405407111}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
 --- !u!1 &1771910397
@@ -148445,6 +148457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton01
       objectReference: {fileID: 0}
+    - target: {fileID: 1540504212762904407, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1405407111}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 178b6b61ad04fad408ab32624ed50a5a, type: 3}
 --- !u!1001 &1494742523830885491

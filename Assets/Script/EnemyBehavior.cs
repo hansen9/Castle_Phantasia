@@ -6,20 +6,24 @@ public class EnemyBehavior : MonoBehaviour
 {
     public Vector3 attackOffset;
     public float attackRange = 1f;
+    public float aggroRange;
+    public float speed;
+    Rigidbody2D rb;
     public LayerMask attackMask;
 	public int AttackDamage = 25;
     public Transform player;
     public bool isFlipped = false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        Debug.Log(player.position);
     }
 
 	public void Attack () {
@@ -50,7 +54,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             transform.localScale = flipped;
             transform.Rotate(0f, 180f, 0f);
-            isFlipped = false;
+            isFlipped = true;
         }
     }
 }
